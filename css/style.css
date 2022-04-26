@@ -68,7 +68,7 @@ nav{
     padding: 20px 3% 0 3%;
 }
 
-footer{
+.home-footer{
 display:flex;
 align-items: center;
 position:absolute;
@@ -79,4 +79,67 @@ bottom:0;
 background-color: rgba(95, 95, 192, 0.849);
 width:100%;
 z-index: 1;
+}
+
+
+
+/*ABOUT PAGE================================================================================================================================================ */ 
+
+
+
+
+
+
+
+
+/* CAPABILITIES PAGE ================================================================================================================================================ */ 
+
+.left{
+    display:flex;
+    flex-direction: column;
+}
+
+.right {
+    display:flex;
+    flex-direction: column;
+}
+
+.left div span{
+    display: block
+}
+
+main section img {
+    width:200px;
+    height: auto
+}
+
+.footer {
+ display:flex;
+align-items: center;
+height:60px;
+background-color: rgba(95, 95, 192, 0.849);
+width:100%;
+}
+
+.capabilities-main{
+    display:flex;
+    margin-right:10%;
+    margin-left:10%
+}
+
+.capabilities-main > .left img, .capabilities-main > .left span {
+    padding-top:10px;
+    padding-bottom:10px
+}
+
+.slogan {
+    margin-left:10%
+}
+
+.company-data{
+    display:flex
+}
+
+.capabilities-right-titles{
+    background-color: lightseagreen;
 }
