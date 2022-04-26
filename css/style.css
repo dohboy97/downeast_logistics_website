@@ -20,14 +20,14 @@ body{
 
 .vid-container { position:relative;
  width: 100%;
- height:fit-content
+ height:1000px
 }
 .vid-container video {
     position:absolute;
     z-index:0;
     width:100%;
     object-fit: fill;
-    max-height: 1600px
+    height:auto
     
 }
 .overlay {
@@ -71,7 +71,7 @@ footer{
 position:fixed;
 bottom:0;
 background-color: rgba(95, 95, 192, 0.966);
-height:163px;
+height:50px;
 width:100%;
-z-index: -1;
+z-index: 1;
 }
