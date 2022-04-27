@@ -9,6 +9,8 @@ html,body{
     
 }
 
+
+
 body{
     margin:0 !important;
     display:flex;
@@ -17,12 +19,16 @@ body{
     
 }
 
+header {
+    background-color:#ffffff
+}
+
 .stamps img {
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .marketLinks img{
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .vid-container { position:relative;
@@ -79,6 +85,7 @@ nav ul a {
 
 nav ul li  {
     text-decoration: none;
+    list-style-type: none;
     color:black;
     border-bottom: 3px solid #ebebeb;
     padding-bottom:3px;
@@ -115,13 +122,28 @@ nav{
 .marketLinks{
     display: flex;
     justify-content: space-between;
-    padding: 20px 3% 0 3%;
+    align-items: center;
+    padding: 20px 3% 20px 3%;
 }
+
+.marketLinks a {
+    text-decoration: none;
+    color:#727272
+   
+}
+
+.marketlinks a i {
+    gap:20px
+}
+
+
 
 .titleAndCreds{
     display:flex;
     justify-content: space-between;
-    padding: 20px 3% 0 3%;
+    align-items: center;
+    padding: 30px 3% 0 3%;
+    border-top:1px solid #ebebeb
 }
 
 .home-footer{
