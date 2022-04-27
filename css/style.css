@@ -1,7 +1,12 @@
 
+*{
+    box-sizing: border-box !important;
+}
+
 /*homepage*/ 
 html,body{
-    max-height:100vh !important
+    max-height:100vh !important;
+    
 }
 
 body{
@@ -9,6 +14,7 @@ body{
     display:flex;
     flex-direction: column;
     background-color: #f9f9f9;
+    
 }
 
 .stamps img {
@@ -133,7 +139,7 @@ z-index: 1;
 
 main section img {
     width:100px;
-    height: 100px
+    height: auto
 }
 
 .footer {
@@ -146,7 +152,7 @@ width:100%;
 }
 
 .footer span {
-    height:20px;
+    height:50px;
     padding-top:15px;
     padding-bottom: 15px;
     padding-left:30px;
@@ -165,7 +171,7 @@ width:100%;
 }
 
 .capabilities-main section.right {
-    font-size: 14px;
+    font-size: 13px;
     padding-left:30px;
     border-left:1px solid #ebebeb
 }
@@ -210,7 +216,7 @@ width:100%;
 .right .capabilities-right-titles{
     background-color: #426197;
     color:white;
-    height:25px;
+    height:35px;
     display:flex;
     justify-content: start;
     align-items: center;
