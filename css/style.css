@@ -143,3 +143,13 @@ width:100%;
 .capabilities-right-titles{
     background-color: lightseagreen;
 }
+
+.core-competencies{
+    display:flex;
+    flex-direction: column;
+}
+
+.naics {
+    display:flex;
+    justify-content:space-between
+}
