@@ -53,15 +53,58 @@ body{
     padding-left:15px
 }
 
+ul{
+    display:flex;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:0%;
+    
+}
+
+.home{
+    border-left:1px solid #ebebeb;
+}
+
 nav ul li {
     list-style-type: none;
-    display:inline;
-    padding-left:25px
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:100px;
+    height:50px;
+    border:1px solid #ebebeb;
+    border-left:none;
+    border-top:none
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    border-bottom: 3px solid #ebebeb;
+    padding-bottom:3px;
+    padding-top:3px
+}
+
+
+
+nav ul li:hover{
+    background-color: #ebebeb;
+    cursor:pointer
+}
+
+nav ul li:hover a{
+    border-bottom:3px solid #426197
 }
 
 nav{
-    padding-bottom: 30px;
+    
+    border-top:1px solid #ebebeb;
+    padding-left:7%;
+    margin-top:30px
 }
+
+
 
 .marketLinks{
     display: flex;
@@ -79,20 +122,24 @@ nav{
 display:flex;
 align-items: center;
 position:absolute;
-height:40px;
+height:50px;
 bottom:0;
-
-
-background-color: rgba(95, 95, 192, 0.849);
+background-color: #292929;
+color:#f9f9f9;
 width:100%;
 z-index: 1;
+padding-left:30px
+}
+
+.filler{
+    width:50px
 }
 
 .slogan {
     background-color:#426197;
     width:100%;
     color:white;
-    padding-left:10%;
+    padding-left:7%; 
     height:50px;
     display:flex;
     align-items: center;
