@@ -229,9 +229,7 @@ justify-content: center;
 
 }
 
-.hidden {
-    display:none
-}
+
 
 .slideshow-1{
     background-image: url(../photos/aboutpage1.jpg);
@@ -245,6 +243,7 @@ justify-content: center;
     padding-left: 15px;
 }
 
+
 .slideshow-1 h3 {
     font-size: 40px;
     margin-bottom:10px
@@ -256,7 +255,18 @@ justify-content: center;
     margin-top:10px
 }
 
+.slideshow-2 {
+    background-color: #426197;
+    height:100%
+}
 
+.slideshow-2 img {
+    max-width:49%
+}
+
+.hidden {
+    display:none
+}
 /* CAPABILITIES PAGE ================================================================================================================================================ */ 
 
 
