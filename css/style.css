@@ -135,6 +135,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 18% 20px 18%;
+    flex-wrap: wrap;
 }
 
 .marketLinks a {
@@ -159,7 +160,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 30px 18% 0 18%;
-    border-top:1px solid #ebebeb
+    border-top:1px solid #ebebeb;
+    flex-wrap: wrap;
 }
 
 
