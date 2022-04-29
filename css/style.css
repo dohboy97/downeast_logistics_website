@@ -201,10 +201,11 @@ justify-content: center;
 /*ABOUT PAGE================================================================================================================================================ */ 
 
 .about-main{
-    height:70vh;
+    
     margin-left:18%;
     margin-right:18%;
-    padding-top:20px
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 .about-main .about-page-paragraph p {
@@ -213,9 +214,45 @@ justify-content: center;
     text-align:justify;
 }
 
+.about-page-photos {
+    width:100%;
+    height:400px;
+    overflow: hidden;
+    
+}
 
+.about-page-photos img{
+    width:100%;
+    height: auto;
 
+}
 
+.hidden {
+    display:none
+}
+
+.slideshow-1{
+    background-image: url(../photos/aboutpage1.jpg);
+    background-size: cover;
+    background-position: left;
+    height:100%;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.slideshow-1 h3 {
+    font-size: 40px;
+    margin-bottom:10px
+    
+}
+
+.slideshow-1 p {
+    font-size: 22px;
+    margin-top:10px
+}
 
 
 /* CAPABILITIES PAGE ================================================================================================================================================ */ 
