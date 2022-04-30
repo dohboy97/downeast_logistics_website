@@ -229,6 +229,11 @@ justify-content: center;
 
 }
 
+.about-page-paragraph {
+    padding-bottom:60px;
+    padding-top:40px
+}
+
 
 
 .slideshow-1{
@@ -298,8 +303,51 @@ justify-content: center;
 
 .slideshow-3 span {
     color:white;
-    font-size: 35px;
+    font-size: 28px;
     
+}
+
+
+.slideshow-4 {
+    background-color: #426197;
+    height:100%;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+.our-certs{
+    padding-top:8%;
+    padding-bottom:30px;
+    color:white;
+    margin-left: 20px;
+}
+
+.our-certs span {
+    font-size: 29px;
+}
+
+.cert-holder div {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+    height:170px
+}
+
+.cert-holder{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cert-holder span {
+    font-size: 23px;
+}
+
+.slideshow-4 img {
+    width: 125px;
+    border:1px solid black;
+
 }
 
 .hidden {
