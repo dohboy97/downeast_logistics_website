@@ -373,12 +373,13 @@ justify-content: center;
 
 .sdvosb{
     border: 1px solid black;
+    margin-bottom: 10px;
     
 }
 
 main section img {
     width:100px;
-    height: auto
+    height: 120px
 }
 
 .footer {
