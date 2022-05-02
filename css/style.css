@@ -546,3 +546,9 @@ width:100%;
     color:white;
     transition: .7s ease-in-out;
 }
+
+/* PRODUCTS CATALOG =================================================================== */ 
+
+.catalog-body{
+    height:100vh
+}
