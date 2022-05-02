@@ -550,5 +550,13 @@ width:100%;
 /* PRODUCTS CATALOG =================================================================== */ 
 
 .catalog-body{
-    height:100vh
+    height:1000vh;
+    margin-left:18%;
+    margin-right:18%;
+   margin-top:40px;
+    margin-bottom:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
