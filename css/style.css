@@ -581,6 +581,15 @@ width:100%;
 }
 
 .final-product-page img{
-    width:200px;
+    max-width:400px;
     border:1px solid black
+}
+
+.final-product-page span a {
+    text-decoration: none;
+    color:#426197
+}
+
+.final-product-page h3{
+    font-size: 24px;
 }
