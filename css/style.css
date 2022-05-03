@@ -547,10 +547,15 @@ width:100%;
 .prodLinks:hover{
     background-color: #426197;
     color:white;
+    cursor: pointer;
     transition: .7s ease-in-out;
 }
 
 /* PRODUCTS CATALOG =================================================================== */ 
+
+/* commented out, potential future use applications 
+
+
 
 .catalog-body{
     height:1000vh;
@@ -592,4 +597,45 @@ width:100%;
 
 .final-product-page h3{
     font-size: 24px;
+} */
+
+
+
+
+
+
+
+/* ======================================================================================================== CONTACT PAGE */ 
+
+.contact-body {
+    height: 1000vh;
+    margin-left: 18%;
+    margin-right:18%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+
+
+
+.form {
+    display:flex;
+    flex-direction: column;
+    background-color: #426197;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VERSION ==================================================================================================================================== */ 
