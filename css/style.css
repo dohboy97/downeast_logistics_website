@@ -523,12 +523,15 @@ width:100%;
     width: 250px;
 
     align-items: center;
-    height:250px;
+    max-height:300px;
     justify-content: center;
     color:black;
     background-color: #ebebeb;
     margin-top:20px;
-    margin-bottom:20px
+    margin-bottom:20px;
+    text-align: center;
+    padding:15px 15px 15px 15px
+    
 }
 
 .prodLinks span {
@@ -559,4 +562,25 @@ width:100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     
+}
+
+.catalog-nav {
+    text-decoration: none;
+    color:white
+}
+
+.catalog-nav:hover {
+    color:#ebebeb;
+    transition: .7s ease-in-out
+}
+
+.final-product-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final-product-page img{
+    width:200px;
+    border:1px solid black
 }
