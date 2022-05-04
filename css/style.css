@@ -624,10 +624,50 @@ width:100%;
     display:flex;
     flex-direction: column;
     background-color: #426197;
+    width:70%;
+    align-items: center;
+    padding-bottom:40px
+    
+}
+
+.form form {
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form button {
+    width:30%;
+    height:50px;
+    border:1px solid black
+}
+
+.form form .form-group {
+    margin-top:10px;
+    margin-bottom:10px;
+    width:100%
+}
+
+.form .form-group input {
+    height:40px;
+    width:100%;
+    padding:20px
 }
 
 
+#message {
+    height:150px;
+    width:100%;
+    padding:20px
+}
 
+.form button:hover {
+    cursor:pointer;
+    background-color: black;
+    color:white;
+    transition: .5s ease-in-out;
+}
 
 
 
