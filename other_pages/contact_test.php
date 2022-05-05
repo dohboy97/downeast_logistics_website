@@ -1,17 +1,58 @@
 <?php
-    ini_set('display_errors', true);
-    error_reporting(-1);
-    ?>
+ 
+$message_sent = false;
+ //submit form
+if(isset($_POST['email']) && $_POST['email']!= ''){
+
+    if(filter_var($_POST['visitor_email'], FILTER_VALIDATE_EMAIL)){
+        $userName = $_POST['visitor_name'];
+        $userEmail = $_POST['visitor_email'];
+        $userSubject = $_POST['visitor_subject'];
+        $userMessage = $_POST['visitor_message'];
+        
+       
+       
+        $TO = 'connor.doherty97@gmail.com';
+        $body = '';
+       
+        $body .= 'From: '.$userName. '\r\n';
+        $body .= 'Email: '.$userEmail. '\r\n';
+        $body .= 'Message: '.$userMessage. '\r\n';
+        
+        mail($to,$userSubject,$body);
+        $message_sent = true;
+        if(mail($to, $userSubject, $body)) {
+            echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+        } else {
+            echo '<p>We are sorry but the email did not go through.</p>';
+        }
+    }
+    else{
+        $message_sent = false;
+    }
+
+
+ 
+}
+
+
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
- 
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = "../css/style.css">
     <script src="https://kit.fontawesome.com/d0e2e32f6e.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <body>
+   
+
+
+
 
     <header>
         <section class = "marketLinks">
@@ -58,11 +99,18 @@
     </header>
 
     <section class = 'contact-body'>
+
+
+    
+
         <div class = 'form'>
             <h3>Contact Information</h3>
             <h4>Send us a message</h4>
 
-            <form action = 'contact.php' method = 'post'>
+
+            <!--action = 'contact.php' -->
+            
+            <form method = 'POST'>
                 
                 <div class = 'form-group'>
                    <label for = 'visitor_name' class = 'form-label'>Your Name</label>
@@ -72,9 +120,16 @@
                 <label for = 'visitor_email' class = 'form-label'>Your Email</label>
                     <input type='text' id = 'email' name = 'visitor_email' placeholder="Email" required>
                 </div>
+
+                <div class = 'form-group'>
+
+                <label for = 'visitor_subject' class = 'form-label'>Subject</label>
+                    <input type='text' id = 'subject' name = 'visitor_subject' placeholder="Subject" required>
+                </div>
+
                 <div class = 'form-group'>
                     
-                    <!-- <input type='text' id = 'message' name = 'visitor-message' placeholder="Your message..." required> -->
+                    
                     <label for = 'visitor_message' class = 'form-label'>Message:</label>
                     <textarea id = message name='visitor_message' placeholder="Message..."></textarea>
                 </div>
