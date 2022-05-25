@@ -687,6 +687,28 @@ width:100%;
         display:none
     }
 
-    .hidden{display: block}
+    nav{
+        display:none
+    }
+
+    .hidden{
+        display: block
+    }
+
+    .mobile{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav{
+        padding-bottom:10px;
+        padding-top:10px;
+        border-top:1px solid #727272
+    }
+
+    .mobileLogo{
+        padding-top:15px
+    }
     
 }
