@@ -710,5 +710,14 @@ width:100%;
     .mobileLogo{
         padding-top:15px
     }
+
+    .mobile-nav i {
+        font-size: 25px;
+    }
+
+    .contentOfVidOverlay{
+        margin-left: 30px;
+        width:80%
+    }
     
 }
