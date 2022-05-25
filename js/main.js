@@ -1,4 +1,6 @@
 
+//SLIDESHOW PAGE
+
 let slideTracker = 0
 
 function imageSlider(){
@@ -38,13 +40,5 @@ else if(slideTracker === 1){
 setInterval(imageSlider,5000)
 
 
+//HAMBURGER MENU
 
-
-// function slideshow(){
-//     for(let i = 1; i <= 4; i++){
-//         document.querySelector(`.slideshow-${i}`).classList.toggle('hidden')
-        
-//     }
-// }
-
-// setInterval(slideshow,5000)
