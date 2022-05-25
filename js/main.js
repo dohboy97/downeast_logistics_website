@@ -42,3 +42,9 @@ setInterval(imageSlider,5000)
 
 //HAMBURGER MENU
 
+document.querySelector('.hamburger').addEventListener('click',hamburger)
+
+function hamburger(){
+    //toggle visibility on mobile nav bar
+    document.querySelector('.hidden-nav').classList.toggle('invisible')
+}
