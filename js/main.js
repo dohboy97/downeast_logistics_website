@@ -46,5 +46,13 @@ document.querySelector('.hamburger').addEventListener('click',hamburger)
 
 function hamburger(){
     //toggle visibility on mobile nav bar
-    document.querySelector('.hidden-nav').classList.toggle('invisible')
+
+    if(document.querySelector('.hidden-nav').classList.contains('showMenu')){
+        document.querySelector('.hidden-nav').classList.remove('showMenu');
+        // document.querySelector('.hidden-nav').classList.toggle('invisible')
+    }else{
+
+    // document.querySelector('.hidden-nav').classList.toggle('invisible')
+    document.querySelector('.hidden-nav').classList.add('showMenu')
+    }
 }

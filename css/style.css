@@ -778,7 +778,15 @@ width:100%;
         width:100%;
         background-color: #292929;
         height: 101%;
+        transform:translateX(-100%);
+        transition: .7s;
        
+    }
+
+    .showMenu {
+        transform:translateX(0);
+        transition: .7s;
+
     }
 
     .hidden-nav .no-top-border{
@@ -790,7 +798,5 @@ width:100%;
     }
 
 
-    .invisible{
-        display: none;
-    }
+   
 }
