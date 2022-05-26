@@ -169,6 +169,6 @@ if(isset($_POST['email']) && $_POST['email']!= ''){
     <footer class = 'footer'>
         <span>Downeast Logistics LLC © 2022</span>
     </footer>
-    
+    <script src = "../js/main.js"></script>
 </body>
 </html>
