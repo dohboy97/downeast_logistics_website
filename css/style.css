@@ -945,3 +945,21 @@ width:100%;
     
 }
 
+@media screen and (min-width:550px) and (max-width:1000px){
+   
+
+
+    /*CONTACT PAGE TABLET */
+
+    .contact-body{
+        margin: 0 2% 0 2%
+    }
+
+    .contact-body .form {
+        width:80%
+    }
+
+    .form button {
+        width:60%
+    }
+}
