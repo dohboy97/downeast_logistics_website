@@ -37,7 +37,7 @@ else if(slideTracker === 1){
 
 }
 
-setInterval(imageSlider,5000)
+setInterval(imageSlider,2000)
 
 
 //HAMBURGER MENU
