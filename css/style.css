@@ -3,6 +3,10 @@
     box-sizing: border-box !important;
 }
 
+img {
+    border-radius: 3px
+}
+
 /*homepage*/ 
 html,body{
     max-height:100vh !important;
@@ -91,7 +95,8 @@ nav ul a {
     
     border:1px solid #ebebeb;
     border-left:none;
-    border-top:none
+    border-top:none;
+    border-radius: 3px;
 }
 
 nav ul li  {
@@ -118,7 +123,7 @@ nav ul a:hover{
 
 nav ul a:hover li{
     border-bottom:3px solid #426197;
-    transition: .7s ease-in-out;
+    transition: .35s ease-in-out;
 }
 
 nav{
@@ -180,7 +185,7 @@ justify-content: center;
 }
 
 .filler{
-    width:20px !important
+    width:20px 
 }
 
 .slogan {
@@ -220,7 +225,7 @@ justify-content: center;
     width:100%;
     height:400px;
     overflow: hidden;
-    
+    border-radius: 3px;
 }
 
 .about-page-photos img{
@@ -452,6 +457,7 @@ width:100%;
 .company-data{
     display:flex;
     background-color: white;
+    
 }
 
 .right .capabilities-right-titles{
@@ -461,13 +467,15 @@ width:100%;
     display:flex;
     justify-content: start;
     align-items: center;
-    padding-left:10px
+    padding-left:10px;
+    border-radius:3px
 }
 
 .core-competencies{
     display:flex;
     flex-direction: column;
     background-color: white;
+
 }
 
 .right div{
@@ -506,7 +514,7 @@ width:100%;
 
 
 .products-body{
-    height:100vh;
+    height: 1000vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -530,8 +538,8 @@ width:100%;
     margin-top:20px;
     margin-bottom:20px;
     text-align: center;
-    padding:15px 15px 15px 15px
-    
+    padding:15px 15px 15px 15px;
+    border-radius:7px
 }
 
 .prodLinks span {
@@ -548,7 +556,7 @@ width:100%;
     background-color: #426197;
     color:white;
     cursor: pointer;
-    transition: .7s ease-in-out;
+    transition: .35s ease-in-out;
 }
 
 /* PRODUCTS CATALOG =================================================================== */ 
@@ -640,7 +648,8 @@ width:100%;
 .form button {
     width:30%;
     height:50px;
-    border:1px solid black
+    border:1px solid black;
+    border-radius:3px
 }
 
 .form form .form-group {
@@ -691,6 +700,10 @@ width:100%;
 
     .titleAndCreds, .marketLinks {
         display:none
+    }
+
+    header .filler{
+        width:0px !important
     }
 
     nav{
@@ -892,6 +905,35 @@ width:100%;
     
     }
 
+
+
+    /* =========================== CAPABILITIES PAGE MOBILE*/
+    .capabilities-main {
+        flex-direction: column-reverse;
+        margin: 0 3% 0 3%
+    }
+
+    .capabilities-main section.right{
+        border-left:none;
+        padding-left:0px;
+        font-size:11px
+        
+    }
     
+    .capabilities-main section.left{
+        align-items: center;
+        text-align: center;
+        padding-right: 0px;
+        font-size:13px;
+        margin: 0 1% 0 1%
+    }
+
+    .contact-body{
+        margin: 0 1% 0 1%
+    }
+
+    
+
     
 }
+
