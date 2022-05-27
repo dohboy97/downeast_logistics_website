@@ -928,12 +928,20 @@ width:100%;
         margin: 0 1% 0 1%
     }
 
+
+    /*CONTACT PAGE MOBILE */
+
     .contact-body{
         margin: 0 1% 0 1%
     }
 
-    
+    .contact-body .form {
+        width:90%
+    }
 
+    .form button {
+        width:60%
+    }
     
 }
 
