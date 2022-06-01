@@ -3,6 +3,8 @@
 
 let slideTracker = 0
 
+if(window.location.pathname == '/home/connor/Desktop/projects/downeast_dev/other_pages/about.html'){
+
 function imageSlider(){
 
 if(slideTracker === 0){
@@ -39,6 +41,7 @@ else if(slideTracker === 1){
 
 setInterval(imageSlider,2000)
 
+}
 
 //HAMBURGER MENU
 
