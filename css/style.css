@@ -945,9 +945,141 @@ width:100%;
     
 }
 
-@media screen and (min-width:550px) and (max-width:1000px){
+@media screen and (min-width:550px) and (max-width:1100px){
    
 
+    /*    HOMEPAGE TABLET    */
+
+    .marketLinks{
+        justify-content: center;
+    }
+
+    .marketLinks img{
+        display:none
+    }
+
+    .titleAndCreds {
+        display:none
+    }
+
+    header .filler{
+        width:0px !important
+    }
+
+    nav{
+        display:none
+    }
+
+    .slogan{
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+    .hidden{
+        display: none
+    }
+
+    .mobile{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav{
+        padding-bottom:10px;
+        padding-top:10px;
+        border-top:1px solid #727272
+    }
+
+   .mobileLogo{
+       padding: 0 4% 0 4%;
+       border-top: 1px solid #727272;
+   }
+
+    .mobileLogo img{
+        padding-top:10px;
+        width:70%;
+        text-align: center;
+    }
+
+    .mobile-nav i {
+        font-size: 25px;
+    }
+
+    .contentOfVidOverlay{
+        margin-left: 30px;
+        margin-top:35px;
+        width:80%
+    }
+
+    .contentOfVidOverlay p {
+        margin-bottom: 0px;
+    }
+    
+    video{
+        height:100vh !important
+
+    }
+
+    .vid-container{
+        height:101vh
+    }
+
+    .mobile-nav i:hover{
+        cursor: pointer;
+    }
+
+   .hidden-nav a{
+       text-decoration: none;
+       color:white;
+       width:100%;
+       text-align: center;
+       
+       border-bottom:0.5px solid white
+   }
+
+   .hidden-nav li {
+       list-style-type: none;
+       padding: 10px 0 10px 0;
+       font-size: 20px;
+   }
+
+   .hidden-nav ul {
+       list-style-type: none;
+       width:100%;
+       display: flex;
+       flex-direction: column;
+       
+       align-items: center;
+   }
+    
+    .hidden-nav{
+        position: absolute;
+        display:flex;
+        z-index: 2;
+        padding-top:5px;
+        width:100%;
+        background-color: #292929;
+        height: 101%;
+        transform:translateX(-100%);
+        transition: .7s;
+       
+    }
+
+    .showMenu {
+        transform:translateX(0);
+        transition: .7s;
+
+    }
+
+    .hidden-nav .no-top-border{
+        border-top: 0px
+    }
+
+    .hidden-nav .no-bottom-border{
+        border-bottom:none
+    }
+    
 
     /*CONTACT PAGE TABLET */
 
