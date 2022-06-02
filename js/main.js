@@ -39,7 +39,7 @@ else if(slideTracker === 1){
 
 }
 
-setInterval(imageSlider,2000)
+setInterval(imageSlider,5000)
 
 }
 
