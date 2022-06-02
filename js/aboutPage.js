@@ -1,9 +1,6 @@
-
-//SLIDESHOW PAGE
-
 let slideTracker = 0
 
-if(window.location.pathname == '/about.html'){
+
 
 function imageSlider(){
 
@@ -40,10 +37,6 @@ else if(slideTracker === 1){
 }
 
 setInterval(imageSlider,5000)
-
-}
-
-//HAMBURGER MENU
 
 document.querySelector('.hamburger').addEventListener('click',hamburger)
 
