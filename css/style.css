@@ -450,6 +450,10 @@ width:100%;
     padding-bottom:10px
 }
 
+.capabilities-main > .left img {
+    background-color: white;
+}
+
 .our-clients{
     display:flex;
     justify-content: center;
@@ -517,6 +521,13 @@ width:100%;
     
 }
 
+.nsn .left span, .nsn .right span{
+    text-align: center;
+}
+
+.right .capabilities-right-titles{
+    justify-content: center;
+}
 
 /* =========================================================================== PRODUCTS PAGE */ 
 
@@ -936,6 +947,13 @@ width:100%;
         margin: 0 1% 0 1%
     }
 
+    .nsn .left span, .nsn .right span{
+        text-align: center;
+    }
+
+    .right .capabilities-right-titles{
+        justify-content: center;
+    }
 
     /*CONTACT PAGE MOBILE */
 
@@ -1007,6 +1025,7 @@ width:100%;
     .mobileLogo img{
         padding-top:10px;
         width:70%;
+        max-width:520px;
         text-align: center;
     }
 
@@ -1147,7 +1166,7 @@ width:100%;
     
     .our-certs{
         padding-top:8%;
-        padding-bottom:20px;
+        padding-bottom:40px;
         color:white;
         margin-left: 20px;
     }
@@ -1182,6 +1201,35 @@ width:100%;
     }
 
 
+    /* CAPABILITIES PAGE TABLET */ 
+
+    .capabilities-main {
+        flex-direction: column-reverse;
+        margin: 0 7% 0 7%
+    }
+
+    .capabilities-main section.right{
+        border-left:none;
+        padding-left:0px;
+        font-size:11px
+        
+    }
+    
+    .capabilities-main section.left{
+        align-items: center;
+        text-align: center;
+        padding-right: 0px;
+        font-size:13px;
+        margin: 0 1% 0 1%
+    }
+
+    .nsn .left span, .nsn .right span{
+        text-align: center;
+    }
+
+    .right .capabilities-right-titles{
+        justify-content: center;
+    }
 
 
 
