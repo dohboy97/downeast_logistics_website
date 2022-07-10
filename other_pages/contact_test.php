@@ -1,39 +1,108 @@
 <?php
  
-$message_sent = false;
- //submit form
-if(isset($_POST['email']) && $_POST['email']!= ''){
+//PHP MAILER
 
-    if(filter_var($_POST['visitor_email'], FILTER_VALIDATE_EMAIL)){
-        $userName = $_POST['visitor_name'];
-        $userEmail = $_POST['visitor_email'];
-        $userSubject = $_POST['visitor_subject'];
-        $userMessage = $_POST['visitor_message'];
-        
-       
-       
-        $TO = 'connor.doherty97@gmail.com';
-        $body = '';
-       
-        $body .= 'From: '.$userName. '\r\n';
-        $body .= 'Email: '.$userEmail. '\r\n';
-        $body .= 'Message: '.$userMessage. '\r\n';
-        
-        mail($to,$userSubject,$body);
-        $message_sent = true;
-        if(mail($to, $userSubject, $body)) {
-            echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+use PHPMailer\PHPMailer\PHPMailer;
+
+require '../vendor/autoload.php';
+
+if (array_key_exists('to', $_POST)) {
+    $err = false;
+    $msg = '';
+    $email = '';
+    //Apply some basic validation and filtering to the subject
+    if (array_key_exists('subject', $_POST)) {
+        $subject = substr(strip_tags($_POST['subject']), 0, 255);
+    } else {
+        $subject = 'No subject given';
+    }
+    //Apply some basic validation and filtering to the query
+    if (array_key_exists('query', $_POST)) {
+        //Limit length and strip HTML tags
+        $query = substr(strip_tags($_POST['query']), 0, 16384);
+    } else {
+        $query = '';
+        $msg = 'No query provided!';
+        $err = true;
+    }
+    //Apply some basic validation and filtering to the name
+    if (array_key_exists('name', $_POST)) {
+        //Limit length and strip HTML tags
+        $name = substr(strip_tags($_POST['name']), 0, 255);
+    } else {
+        $name = '';
+    }
+    //Validate to address
+    //Never allow arbitrary input for the 'to' address as it will turn your form into a spam gateway!
+    //Substitute appropriate addresses from your own domain, or simply use a single, fixed address
+    if (array_key_exists('to', $_POST) && in_array($_POST['to'], ['sales', 'support', 'accounts'], true)) {
+        $to = $_POST['to'] . '@example.com';
+    } else {
+        $to = 'support@example.com';
+    }
+    //Make sure the address they provided is valid before trying to use it
+    if (array_key_exists('email', $_POST) && PHPMailer::validateAddress($_POST['email'])) {
+        $email = $_POST['email'];
+    } else {
+        $msg .= 'Error: invalid email address provided';
+        $err = true;
+    }
+    if (!$err) {
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = 'localhost';
+        $mail->Port = 25;
+        $mail->CharSet = PHPMailer::CHARSET_UTF8;
+        //It's important not to use the submitter's address as the from address as it's forgery,
+        //which will cause your messages to fail SPF checks.
+        //Use an address in your own domain as the from address, put the submitter's address in a reply-to
+        $mail->setFrom('contact@example.com', (empty($name) ? 'Contact form' : $name));
+        $mail->addAddress($to);
+        $mail->addReplyTo($email, $name);
+        $mail->Subject = 'Contact form: ' . $subject;
+        $mail->Body = "Contact form submission\n\n" . $query;
+        if (!$mail->send()) {
+            $msg .= 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
-            echo '<p>We are sorry but the email did not go through.</p>';
+            $msg .= 'Message sent!';
         }
     }
-    else{
-        $message_sent = false;
-    }
+}
+
+// $message_sent = false;
+ //submit form
+// if(isset($_POST['email']) && $_POST['email']!= ''){
+
+//     if(filter_var($_POST['visitor_email'], FILTER_VALIDATE_EMAIL)){
+//         $userName = $_POST['visitor_name'];
+//         $userEmail = $_POST['visitor_email'];
+//         $userSubject = $_POST['visitor_subject'];
+//         $userMessage = $_POST['visitor_message'];
+        
+       
+       
+//         $TO = 'connor.doherty97@gmail.com';
+//         $body = '';
+       
+//         $body .= 'From: '.$userName. '\r\n';
+//         $body .= 'Email: '.$userEmail. '\r\n';
+//         $body .= 'Message: '.$userMessage. '\r\n';
+        
+//         mail($to,$userSubject,$body);
+//         $message_sent = true;
+//         if(mail($to, $userSubject, $body)) {
+//             echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+//         } else {
+//             echo '<p>We are sorry but the email did not go through.</p>';
+//         }
+//     }
+//     else{
+//         $message_sent = false;
+//     }
 
 
  
-}
+// }
 
 
 ?>
