@@ -127,9 +127,11 @@ if(isset($_POST['email']) && $_POST['email']!= ''){
     
     </header>
 
+    <div class = 'contact-body-photo'>
+
     <section class = 'contact-body'>
 
-
+        <!-- <img src="../photos/portland_headlight.jpg"> -->
     
 
         <div class = 'form'>
@@ -167,7 +169,7 @@ if(isset($_POST['email']) && $_POST['email']!= ''){
 
         </div>
     </section>
-    
+    </div>
     
     <footer class = 'footer'>
         <span>Downeast Logistics LLC © 2022</span>
