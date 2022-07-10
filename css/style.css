@@ -651,16 +651,22 @@ width:100%;
 /* ======================================================================================================== CONTACT PAGE */ 
 
 .contact-body {
-    height: 1000vh;
+    
     margin-left: 18%;
     margin-right:18%;
     display: flex;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    
 }
 
-
+.contact-body-photo{
+    background-image: url('../photos/portland_headlight.jpg');
+    background-repeat: no-repeat;
+    height: 1000vh;
+    background-size: cover;
+}
 
 
 .form {
@@ -671,6 +677,10 @@ width:100%;
     align-items: center;
     padding-bottom:40px
     
+}
+
+.form h3, .form h4{
+    color:white
 }
 
 .form form {
@@ -698,6 +708,10 @@ width:100%;
     width:100%;
     padding:20px
 }
+
+/* .form-group label{
+    color:#ebebeb
+} */
 
 
 #message {
