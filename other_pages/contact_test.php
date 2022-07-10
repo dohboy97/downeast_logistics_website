@@ -36,9 +36,9 @@ if (array_key_exists('to', $_POST)) {
     //Never allow arbitrary input for the 'to' address as it will turn your form into a spam gateway!
     //Substitute appropriate addresses from your own domain, or simply use a single, fixed address
     if (array_key_exists('to', $_POST) && in_array($_POST['to'], ['sales', 'support', 'accounts'], true)) {
-        $to = $_POST['to'] . '@example.com';
+        $to = $_POST['to'] . 'connor.doherty97@gmail.com';
     } else {
-        $to = 'support@example.com';
+        $to = 'connor.doherty97@gmail.com';
     }
     //Make sure the address they provided is valid before trying to use it
     if (array_key_exists('email', $_POST) && PHPMailer::validateAddress($_POST['email'])) {
@@ -56,7 +56,7 @@ if (array_key_exists('to', $_POST)) {
         //It's important not to use the submitter's address as the from address as it's forgery,
         //which will cause your messages to fail SPF checks.
         //Use an address in your own domain as the from address, put the submitter's address in a reply-to
-        $mail->setFrom('contact@example.com', (empty($name) ? 'Contact form' : $name));
+        $mail->setFrom('info@downeastlog.com', (empty($name) ? 'Contact form' : $name));
         $mail->addAddress($to);
         $mail->addReplyTo($email, $name);
         $mail->Subject = 'Contact form: ' . $subject;
@@ -209,32 +209,36 @@ if (array_key_exists('to', $_POST)) {
 
 
             <!--action = 'contact.php' -->
+            <?php if (empty($msg)) { ?>
             
-            <form method = 'POST'>
+            <form method = 'post'>
                 
                 <div class = 'form-group'>
-                   <label for = 'visitor_name' class = 'form-label'>Your Name</label>
-                    <input type='text' id = 'name' name = 'visitor_name' placeholder="Name" required>
+                   <label for = 'name' class = 'form-label'>Your Name</label>
+                    <input type='text' id = 'name' name = 'name' placeholder="Name" maxlength='255' required>
                 </div>
                 <div class = 'form-group'>
-                <label for = 'visitor_email' class = 'form-label'>Your Email</label>
-                    <input type='text' id = 'email' name = 'visitor_email' placeholder="Email" required>
+                <label for = 'email' class = 'form-label'>Your Email</label>
+                    <input type='text' id = 'email' name = 'email' placeholder="Email" maxlength = '255' required>
                 </div>
 
                 <div class = 'form-group'>
 
-                <label for = 'visitor_subject' class = 'form-label'>Subject</label>
-                    <input type='text' id = 'subject' name = 'visitor_subject' placeholder="Subject" required>
+                <label for = 'subject' class = 'form-label'>Subject</label>
+                    <input type='text' id = 'subject' name = 'subject' placeholder="Subject" maxlength = '255' required>
                 </div>
 
                 <div class = 'form-group'>
                     
                     
-                    <label for = 'visitor_message' class = 'form-label'>Message:</label>
-                    <textarea id = message name='visitor_message' placeholder="Message..."></textarea>
+                    <label for = 'query' class = 'form-label'>Message:</label>
+                    <textarea id = 'query' name='query' placeholder="Message..."></textarea>
                 </div>
                 <button type = 'submit'>Send Message</button>
             </form>
+            <?php } else {
+    echo $msg;
+} ?>
 
         </div>
     </section>
