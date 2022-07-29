@@ -113,7 +113,7 @@ if (array_key_exists('to', $_POST)) {
     <meta charset="UTF-8">
    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = 'stylesheet' href = "../css/style.css">
+    <link rel = 'stylesheet' href = "css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -136,16 +136,16 @@ if (array_key_exists('to', $_POST)) {
             </a>
             </div>
             <!--Fedmall, GSA, etc Vendor Page Links-->
-            <img src = '../photos/fedmall_gsa_holder2.jpg'>
+            <img src = 'photos/fedmall_gsa_holder2.jpg'>
         </section>
         <section class = "titleAndCreds">
             <div>
-                <img src = '../photos/dlogo.jpg'>
+                <img src = 'photos/dlogo.jpg'>
                 
             </div>
             <div class = "stamps">
                 <!--SDVOSB EDWOSB ETC STAMPS-->
-                <img src = '../photos/fullribbons.jpg'>
+                <img src = 'photos/fullribbons.jpg'>
             </div>
         </section>
 
@@ -153,7 +153,7 @@ if (array_key_exists('to', $_POST)) {
 
         <section class = 'mobile hidden mobileLogo'>
 
-        <img src = '../photos/dlogo.jpg'>
+        <img src = 'photos/dlogo.jpg'>
 
         </section>
         <section class = 'mobile hidden mobile-nav'>
@@ -176,7 +176,7 @@ if (array_key_exists('to', $_POST)) {
 
         <nav>
             <ul>
-                <a  class = 'home' href = '../index.html'><li>Home</li></a>
+                <a  class = 'home' href = 'index.html'><li>Home</li></a>
                 <a href = 'about.html'><li>About</li></a>
                 <a href = 'capabilities.html'><li>Capabilities</li></a>
                 <a href = 'products.html'><li>Products</li></a>
@@ -247,6 +247,6 @@ if (array_key_exists('to', $_POST)) {
     <footer class = 'footer'>
         <span>Downeast Logistics LLC © 2022</span>
     </footer>
-    <script src = "../js/main.js"></script>
+    <script src = "js/main.js"></script>
 </body>
 </html>
