@@ -169,7 +169,7 @@ if (array_key_exists('to', $_POST)) {
             <a href = 'about.html'><li>About</li></a>
             <a href = 'capabilities.html'><li>Capabilities</li></a>
             <a href = 'products.html'><li>Products</li></a>
-            <a class = 'no-bottom-border' href = 'contact_test.php'><li>Contact</       li></a>
+            <a class = 'no-bottom-border' href = 'contact.php'><li>Contact</       li></a>
 
         </ul>
         </section>
@@ -180,7 +180,7 @@ if (array_key_exists('to', $_POST)) {
                 <a href = 'about.html'><li>About</li></a>
                 <a href = 'capabilities.html'><li>Capabilities</li></a>
                 <a href = 'products.html'><li>Products</li></a>
-                <a href = 'contact.html'><li>Contact</li></a>
+                <a href = 'contact.php'><li>Contact</li></a>
             </ul>
         </nav>
         

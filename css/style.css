@@ -713,6 +713,10 @@ width:100%;
     color:#ebebeb
 } */
 
+textarea{
+    width:100%;
+    height:150px;
+}
 
 #query {
     height:150px;
