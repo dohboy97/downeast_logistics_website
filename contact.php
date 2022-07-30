@@ -232,7 +232,7 @@ if (array_key_exists('to', $_POST)) {
                     
                     
                     <label for = 'query' class = 'form-label'>Message:</label>
-                    <textarea id = 'query' name='query' placeholder="Message..."></textarea>
+                    <textarea width = '100%' height = '150px' id = 'query' name='query' placeholder="Message..."></textarea>
                 </div>
                 <button type = 'submit'>Send Message</button>
             </form>
