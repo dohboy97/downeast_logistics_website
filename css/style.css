@@ -10,7 +10,7 @@ img {
 
 /*homepage*/ 
 html,body{
-    max-height:100vh !important;
+    max-height:100vh !important
     
 }
 
@@ -217,7 +217,8 @@ justify-content: center;
     margin-right:18%;
     padding-top:50px;
     padding-bottom: 20px;
-    height:300vh
+    height:100%;
+    flex:1 0 auto
 }
 
 .about-main .about-page-paragraph p {
@@ -407,6 +408,7 @@ height:50px;
 justify-content: center;
 background-color: #292929;
 width:100%;
+flex-shrink: 0;
 }
 
 .footer span {
@@ -873,7 +875,7 @@ textarea{
     .about-main{
         margin-left:5%;
         margin-right:5%;
-        height:200vh
+        height:100%
     }
 
     .about-page-photos{
@@ -1149,7 +1151,7 @@ textarea{
     .about-main{
         margin-left:5%;
         margin-right:5%;
-
+        height: 100%
     }
 
     .about-page-photos{
