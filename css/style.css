@@ -669,13 +669,14 @@ margin-top: auto;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    height:100%
     
 }
 
 .contact-body-photo{
     background-image: url('../photos/portland_headlight.jpg');
     background-repeat: no-repeat;
-    height: 1000vh;
+    height:80%;
     background-size: cover;
 }
 
