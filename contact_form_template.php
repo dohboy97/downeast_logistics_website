@@ -233,7 +233,7 @@ if (array_key_exists('subject', $_POST)) {
     </div>
     
     <footer class = 'footer'>
-        <span>Downeast Logistics LLC © 2022</span>
+        <span>Downeast Logistics LLC © 2024</span>
     </footer>
     <script src = "js/main.js"></script>
 </body>
